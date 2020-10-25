@@ -1,0 +1,26 @@
+\documentclass[a4paper, 12pt]{scrartcl}
+\input{../preamble.tex}
+
+\usepackage{blindtext}
+\usepackage{geometry}
+
+\geometry {
+        left = 2.5cm,
+        right = 2.5cm,
+        top = 1.0cm,
+        bottom = 0.5cm,
+        includeheadfoot
+}
+
+\title{Physik Klasse 10 Realschule Bayern}
+\date{\today}
+\author{7h}
+
+\begin{document}
+    \maketitle
+    \tableofcontents
+    % start topics
+    \section {Elektronik}
+    \subfile{./Kapitel/Elektronik/Stromstaerke.tex}
+    % end topics
+\end{document}
