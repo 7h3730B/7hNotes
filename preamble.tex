@@ -1,0 +1,58 @@
+% Some basic packages
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc} % west european chars
+\usepackage{url}
+\usepackage{enumitem} % able to change the settings of enumerates/itemizes
+
+\pdfminorversion=7
+
+\usepackage{hyperref}       % hyperlinks
+\usepackage{parskip} % Don't indent paragraphs, leave some space between them
+% \usepackage{emptypage} % Hide page number when page is empty
+% \usepackage{subcaption} % for subfigures
+\usepackage{tocloft} % show dots in the table of contents
+\usepackage{multicol} % allows for multiple columns
+\usepackage{comment}  % To comment out things
+\usepackage{subfiles}
+\usepackage{textcomp} % For arrow
+\usepackage{xcolor}
+\usepackage[version=4]{mhchem} % Chemic stuff
+\usepackage{chemfig} % Chemic structures
+\usepackage{subfiles} % Split compilation on one file
+\usepackage{amsmath} % for math
+
+% Todonotes and inline notes in fancy boxes
+\usepackage{todonotes}
+\usepackage{tcolorbox}
+
+\setlength {\marginparwidth }{2cm}
+% Notes
+\newenvironment{note}[1]{\begin{tcolorbox}[
+    arc=0mm,
+    colback=white,
+    colframe=white!60!black,
+    title=#1,
+    fonttitle=\sffamily,
+    breakable
+]}{\end{tcolorbox}}
+
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+
+% % Figure support as explained in my blog post.
+% \usepackage{import}
+% \usepackage{xifthen}
+% \usepackage{pdfpages}
+% \usepackage{transparent}
+% \newcommand{\incfig}[1]{%
+%     \def\svgwidth{\columnwidth}
+%     \import{./figures/}{#1.pdf_tex}
+% }
+
+% Fix some stuff
+% %http://tex.stackexchange.com/questions/76273/multiple-pdfs-with-page-group-included-in-a-single-page-warning
+\pdfsuppresswarningpagegroup=1
+
+
+% My name
+\author{7h3730B}
