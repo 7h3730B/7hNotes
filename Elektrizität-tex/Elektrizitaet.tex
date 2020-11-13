@@ -1,0 +1,28 @@
+\documentclass[a4paper, 12pt]{scrartcl}
+\input{../preamble.tex}
+
+\usepackage{geometry}
+
+\geometry {
+        left = 2.5cm,
+        right = 2.5cm,
+        top = 1.0cm,
+        bottom = 0.5cm,
+        includeheadfoot
+}
+
+\title{Elektrizitäts Notizen}
+\date{\today}
+
+\begin{document}
+    \maketitle
+    \tableofcontents
+    % start topics
+    \section {Was ist Static Electricity / statische Aufladung?}
+    \subfile{Kapitel/Static_Electricity.tex}
+    \section{Conductors vs Insulators}
+    \subfile{Kapitel/conductors-vs-insulators.tex}
+    \section{Electron flow}
+    \subfile{Kapitel/electron-flow.tex}
+    % end topics
+\end{document}
